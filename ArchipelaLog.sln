@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchipelaLog", "ArchipelaLog.csproj", "{BC289591-6E8D-457A-BC5A-86EE12548397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Release Linux|Any CPU = Release Linux|Any CPU
+		Release Linux|ARM64 = Release Linux|ARM64
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Debug|ARM64.Build.0 = Debug|ARM64
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release Linux|Any CPU.ActiveCfg = Release Linux|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release Linux|Any CPU.Build.0 = Release Linux|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release Linux|ARM64.ActiveCfg = Release Linux|ARM64
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release Linux|ARM64.Build.0 = Release Linux|ARM64
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release|ARM64.ActiveCfg = Release|ARM64
+		{BC289591-6E8D-457A-BC5A-86EE12548397}.Release|ARM64.Build.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
