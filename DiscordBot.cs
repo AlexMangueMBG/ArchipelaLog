@@ -25,8 +25,8 @@ namespace ArchipelaLog
             if (Environment.GetEnvironmentVariable("BotToken") != null)
                 token = Environment.GetEnvironmentVariable("BotToken");
 
-            if(File.Exists(@$"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\BotToken.txt"))
-                token = File.ReadAllText(@$"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\BotToken.txt");
+            if(File.Exists(@$"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}/BotToken.txt"))
+                token = File.ReadAllText(@$"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}/BotToken.txt");
 
             if(string.IsNullOrEmpty(token))
                 throw new Exception("Failed to find discord bot token. You can either add an environment variable called \"BotToken\" with your token on it. Or, if you prefer it, you can create text file called \"BotToken.txt\" on the exe folder and set your token there.");

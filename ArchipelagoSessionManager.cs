@@ -27,12 +27,15 @@ namespace ArchipelaLog
                 await s_DataLock.WaitAsync();
 
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-                    sessionPath = @$"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\Sessions.json";
+                    sessionPath = @$"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}/Sessions.json";
 
                 if (!File.Exists(sessionPath))
                 {
-                    Directory.CreateDirectory(Path.GetDirectoryName(sessionPath));
-                    Console.WriteLine($"Created folder {Path.GetDirectoryName(sessionPath)}");
+                    if(!Directory.Exists(Path.GetDirectoryName(sessionPath)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(sessionPath));
+                        Console.WriteLine($"Created folder {Path.GetDirectoryName(sessionPath)}");
+                    }
                     File.WriteAllText(sessionPath, "[]");
                 }
 
